@@ -7,35 +7,36 @@
 </head>
 
 <body>
-    <!--HEADER-->
-    <header class="page-header">
-        <a class="image" href="./index.html">
-            <img src="http://placehold.it/150x100" alt="Седона" width="150" height="100">
-        </a>
+    <div class="container">
+        <!--HEADER-->
+        <header class="page-header">
+            <a class="image" href="index.html">
+                <img src="http://placehold.it/150x100" alt="Седона" width="150" height="100">
+            </a>
 
-        <nav class="main-nav">
-            <ul>
-                <li>
-                    <a href="#" class="btn">Информация</a>
-                </li>
-                <li>
-                    <a href="#" class="btn">Фото и видео</a>
-                </li>
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="#" class="btn">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn">Фото и видео</a>
+                    </li>
 
-                <li>
-                    <a href="#" class="btn">Карта штата</a>
-                </li>
-                <li>
-                    <a href="#" class="btn">Гостиницы</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!--HEADER END-->
+                    <li>
+                        <a href="#" class="btn">Карта штата</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn">Гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--HEADER END-->
 
-    <main class="container clearfix">
-                    <!-- Главное окно - форма, блок фильтра поиска, результаты поиска -->
-            <form class="search-hotels-form clearfix" action="#" method="get">
+        <main>
+            <!-- Главное окно - форма, блок фильтра поиска, результаты поиска -->
+            <form class="search-hotels-form" action="#" method="get">
                 <fieldset>
                     <legend>Инфраструктура:</legend>
                     <input name="arr-infrastructure[]" type="checkbox" id="checkbox-1" checked>
@@ -56,112 +57,104 @@
                 </fieldset>
                 <fieldset class="slider-form">
                     <legend>Стоимость в сутки (р):</legend>
-                    <div class="wrapper-input">
-                        <input class="input-min" name="input-min" type="text" value="От 0">
-                        <input class="input-max" name="input-max" type="text" value="До 3000">
-                    </div>
-                    <div class="range">
-                        <div class="scale">
-                            <div class="bar"></div>
-                        </div>
-                        <div class="toggle min-toggle"></div>
-                        <div class="toggle max-toggle"></div>
-                    </div>
+                    <div>Тут будет панель</div>
                     <button type="submit">Показать</button>
                 </fieldset>
             </form>
 
-            <div class="search-filter clearfix">
+            <div class="rezult-sort">
                 <div class="filter-left-wrapper clearfix">
-                    <h3 class="search-sum">Найдено: 3 </h3>
-                    <p class="sort">Сортировка:</p>
-                    <ul class="clearfix">
-                        <li class="search-filter-active">По цене</li>
-                        <li><a href="#">По типу</a></li>
-                        <li><a href="#">По рейтингу</a></li>
+                    <span class="search-sum">Найдено: <b>3</b></span>
+                    <ul class="sort-list">
+                        <li class="sort-item sort">Сортировка:</li>
+                        <li class="sort-item active"><a href="#">По цене</a></li>
+                        <li class="sort-item"><a href="#">По типу</a></li>
+                        <li class="sort-item"><a href="#">По рейтингу</a></li>
+                        <li class="sort-item arrows">
+                            <a class="icon-up-dir" href="#">Up</a>
+                            <a class="icon-down-dir active-dir" href="#">Down</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="arrows clearfix">
-                    <a class="icon-up-dir" href="#">Up</a>
-                    <a class="icon-down-dir active-dir" href="#">Down</a>
-                </div>
             </div>
-        <!--ITEM-->
-        <article class="result-item">
-            <section class="result-info">
+            <!--ITEM-->
+            <article class="result-item">
+                <img src="http://placehold.it/150x100" alt="Седона" width="150" height="100">
                 <div class="item-info">
-                    <img src="http://placehold.it/150x100" alt="Седона" width="150" height="100">
-                    <h2>Amara Resort & Spa</h2>
-                    <p>Гостиница От 3500 р.</p>
-                    <a href="#" class="btn">Подробнее</a>
-                    <a href="#" class="btn">Забронировать</a>
+                    <h2>Amara Resort &amp; Spa</h2>
+                    <div>
+                        <span>Гостиница</span>
+                        <a href="#" class="btn">Подробнее</a>
+                    </div>
+                    <div>
+                        <span>От 4000 р.</span>
+                        <a href="#" class="btn">Забронировать</a>
+                    </div>
                 </div>
                 <div class="rating">
-                    5 Звездочек :)
+                    <div class="star">5 Звездочек :)</div>
+                    <div class="user-rating">Рейтинг: 8,5</div>
                 </div>
-                <div class="button">
-                    Рейтинг: 8,5
-                </div>
-            </section>
-        </article>
-        <!--ITEM END-->
-        <!--ITEM-->
-        <article class="result-item">
-            <section class="result-info">
+            </article>
+            <!--ITEM END-->
+            <!--ITEM-->
+            <article class="result-item">
+                <img src="http://placehold.it/150x100" alt="Седона" width="150" height="100">
                 <div class="item-info">
-                    <img src="http://placehold.it/150x100" alt="Седона" width="150" height="100">
                     <h2>Desert Quail Inn</h2>
-                    <p>Мотель От 2000 р.</p>
-                    <!--Вопрос по оформлению цены Как лучше-->
-                    <a href="#" class="btn">Подробнее</a>
-                    <a href="#" class="btn">Забронировать</a>
+                    <div>
+                        <span>Мотель</span>
+                        <a href="#" class="btn">Подробнее</a>
+                    </div>
+                    <div>
+                        <span>От 3000 р.</span>
+                        <a href="#" class="btn">Забронировать</a>
+                    </div>
                 </div>
                 <div class="rating">
-                    2 Звездочки :)
+                    <div class="star">3 Звездочек :)</div>
+                    <div class="user-rating">Рейтинг: 8,9</div>
                 </div>
-                <div class="button">
-                    Рейтинг: 8,9
-                </div>
-            </section>
-        </article>
-        <!--ITEM END-->
-        <!--ITEM-->
-        <article class="result-item">
-            <section class="result-info">
+            </article>
+            <!--ITEM END-->
+            <!--ITEM-->
+            <article class="result-item">
+                <img src="http://placehold.it/150x100" alt="Седона" width="150" height="100">
                 <div class="item-info">
-                    <img src="http://placehold.it/150x100" alt="Седона" width="150" height="100">
                     <h2>Villas At Poco Diablo</h2>
-                    <p>Апартаменты От 4000 р.</p>
-                    <a href="#" class="btn">Подробнее</a>
-                    <a href="#" class="btn">Забронировать</a>
+                    <div>
+                        <span>Апартаменты</span>
+                        <a href="#" class="btn">Подробнее</a>
+                    </div>
+                    <div>
+                        <span>От 2000 р.</span>
+                        <a href="#" class="btn">Забронировать</a>
+                    </div>
                 </div>
                 <div class="rating">
-                    3 Звездочки :)
+                    <div class="star">2 Звездочек :)</div>
+                    <div class="user-rating">Рейтинг: 9,2</div>
                 </div>
-                <div class="button">
-                    Рейтинг: 9,2
-                </div>
-            </section>
-        </article>
-        <!--ITEM END-->
-    </main>
-    <!--FOOTER-->
-    <footer class="page-footer">
-        <div class="footer-tag">
-            #VISITSEDONA
-        </div>
-        <div class="footer-social">
-            <a class="socil-btn socil-btn-tw" href="#" target="_blank">Твитер</a>
-            <a class="socil-btn socil-btn-fb" href="#" target="_blank">Фейсбук</a>
-            <a class="socil-btn socil-btn-youtub" href="#" target="_blank">Ютьюб</a>
-        </div>
-        <div class="footer-copyright">
-            Website by
-            <a href="#" target="_blank"><img src="http://placehold.it/150x100" alt="Седона" width="150" height="100"></a>
-        </div>
-    </footer>
-    <!--FOOTER END-->
-
+            </article>
+            <!--ITEM END-->
+        </main>
+        <!--FOOTER-->
+        <footer class="page-footer">
+            <div class="footer-tag">
+                #VISITSEDONA
+            </div>
+            <div class="footer-social">
+                <a class="socil-btn socil-btn-tw" href="#" target="_blank">Твитер</a>
+                <a class="socil-btn socil-btn-fb" href="#" target="_blank">Фейсбук</a>
+                <a class="socil-btn socil-btn-youtub" href="#" target="_blank">Ютьюб</a>
+            </div>
+            <div class="footer-copyright">
+                Website by
+                <a href="#" target="_blank"><img src="http://placehold.it/150x100" alt="Седона" width="150" height="100"></a>
+            </div>
+        </footer>
+        <!--FOOTER END-->
+    </div>
 </body>
 
 </html>
